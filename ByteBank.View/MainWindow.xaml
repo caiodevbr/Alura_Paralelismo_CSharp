@@ -12,6 +12,12 @@
                Height="75"
                DockPanel.Dock="Top"/>
 
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
         <!-- Botão para Processamento -->
         <TextBlock Name="TxtTempo"
                    DockPanel.Dock="Bottom"
@@ -22,6 +28,13 @@
                 DockPanel.Dock="Bottom"
                 Click="BtnProcessar_Click">
             Fazer Processamento
+        </Button>
+        <Button Name="BtnCancelar"
+                Padding="10"
+                IsEnabled="False"
+                Grid.Column="2"
+                Click="BtnCancelar_Click">
+            Cancelar
         </Button>
         
         <!-- Resultado -->
